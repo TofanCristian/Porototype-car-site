@@ -1,0 +1,647 @@
+/* *************************************************
+Common Style
+***************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #3c3861;
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* *************************************************
+Header Style
+***************************************************/
+
+.snacks {
+  background-color: #ebebeb;
+  color: rgb(246, 219, 219);
+  font-family: Bison;
+  padding: 0 3%;
+  font-size: 20px;
+  box-shadow: 0 0.4em 0.4em rgb(153, 153, 152);
+}
+.snacks a {
+  font-weight: 480;
+  color: #3c3861;
+}
+
+.container {
+  margin: 0;
+  margin-right: 7%;
+}
+.logoS {
+  font-weight: 500;
+  margin-left: 7%;
+}
+
+div.clasna {
+  gap: 10%;
+}
+
+/* .listStyle li {
+  padding: 0 10%;
+}
+.listStyle {
+  margin-left: 10%;
+  width: 60%;
+} */
+
+/* *************************************************
+First Section
+***************************************************/
+
+#sec1 {
+  padding: 7% 0 2% 0;
+  background-color: #ffffff;
+}
+
+.sec1MainDiv {
+  color: #3c3861;
+  margin: 0 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec1FirstDiv {
+  width: 30vw;
+  height: 20vw;
+}
+
+.sec1FirstDiv h1 {
+  font-weight: 750;
+  padding: 2%;
+  margin: 0;
+  font: italic 70px "Fira Sans", serif;
+}
+.sec1FirstDiv p {
+  font: 1.2rem "Fira Sans", sans-serif;
+  padding: 4%;
+}
+
+.sec1btn {
+  margin: 3%;
+  padding: 3%;
+}
+
+.sec1SeconDiv {
+  position: relative;
+  margin-right: 6%;
+  margin-top: 10vw;
+}
+
+.sec1SeconDiv img {
+  position: relative;
+  margin-top: 4%;
+  margin-left: 8%;
+  width: 100%;
+  height: 100%;
+}
+
+/* *************************************************
+Second Section
+***************************************************/
+#sec2 {
+  padding: 2% 0;
+  background-color: #f5f7fb;
+}
+
+.sec2Text {
+  color: #3c3861;
+  margin: 5% 8%;
+  width: 30vw;
+}
+.sec2Text h1 {
+  font-weight: 750;
+  text-align: center;
+
+  font: italic 5vw "Fira Sans", serif;
+  padding: 2% 0;
+}
+.sec2Text p {
+  font: 1.2rem "Fira Sans", sans-serif;
+  font-size: 2vw;
+}
+
+.sec2MainDiv {
+  margin: 8% 8% 4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec2MiniDiv {
+  width: 12vw;
+  height: 30vh;
+  font: 1.2rem "Fira Sans", sans-serif;
+  background: rgb(244, 243, 254);
+  background: linear-gradient(
+    34deg,
+    rgba(244, 243, 254, 1) 0%,
+    rgba(240, 240, 255, 1) 44%,
+    rgba(212, 219, 221, 1) 73%,
+    rgba(230, 251, 255, 1) 100%
+  );
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  color: #3c3861;
+  transition: opacity 0.5s;
+  box-shadow: 3px 3px rgb(194, 190, 190), -1em 0 0.4em rgb(90, 90, 86);
+}
+
+.sec2MiniDiv:hover {
+  cursor: pointer;
+  box-shadow: none;
+  transition: 1s;
+}
+
+.sec2MiniDiv img {
+  margin-top: 10%;
+}
+
+.sec2MiniDiv p {
+  margin-top: 28%;
+  width: 8vw;
+}
+
+/* *************************************************
+Third Section
+***************************************************/
+#sec3 {
+  background-color: rgb(208, 212, 209);
+  padding: 0 0 5% 0;
+}
+
+.sec3Text {
+  color: #3c3861;
+  margin: 0 0 0 17%;
+  padding: 5% 0 0 0;
+  display: flex;
+  align-items: left;
+  text-align: left;
+}
+
+.sec3Text h1 {
+  font: italic 70px "Fira Sans", serif;
+
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.sec3img {
+  width: 65vw;
+  margin: 0.5% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.img-container {
+  width: 49.5%;
+  height: 49.5%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transform: scale(1.2);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.img-container img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.overlay-text {
+  background-color: rgba(104, 102, 102, 0.7);
+  position: absolute;
+  top: 85%;
+  left: 2%;
+  font-weight: bold;
+  font: 1.2rem "Fira Sans", sans-serif;
+  color: #e8e8e8;
+  padding: 10px;
+  text-align: left;
+  z-index: 20;
+}
+
+/* *************************************************
+forth Section
+***************************************************/
+#sec4 {
+  color: #3c3861;
+  font: italic 70px "Fira Sans", serif;
+  font: 1.2rem "Fira Sans", sans-serif;
+  padding: 4% 0;
+  background-color: #f5f7fb;
+}
+
+.sec4MainDiv {
+  margin: 4% 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec4MiniDiv {
+  font: 1rem "Fira Sans", sans-serif;
+  width: 25vw;
+  height: 55vh;
+  opacity: 0.9;
+  background: rgb(244, 243, 254);
+  background: linear-gradient(
+    34deg,
+    rgba(244, 243, 254, 1) 0%,
+    rgba(240, 240, 255, 1) 44%,
+    rgba(212, 219, 221, 1) 73%,
+    rgba(230, 251, 255, 1) 100%
+  );
+  box-shadow: 3px 3px rgb(235, 227, 227), -1em 0 0.4em rgb(90, 90, 86);
+}
+
+.sec4MiniDiv:hover {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+.sec4Text {
+  margin: 0 8% 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.sec4Text h1 {
+  font: italic 70px "Fira Sans", serif;
+}
+.sec4Text h2 {
+  color: #3c3861;
+  font: 1.5rem "Fira Sans", sans-serif;
+}
+
+.sec4MiniDiv img {
+  width: 20vw;
+  max-width: 100%;
+  margin-left: 10%;
+  height: auto;
+}
+
+.primImgs {
+  margin-top: 10%;
+}
+
+.secImg {
+  margin-top: 5%;
+}
+
+.sec4InMiniDiv {
+  color: #3c3861;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sec4InMiniDiv p {
+  font-weight: bold;
+  padding: 7%;
+}
+.title {
+  font: 1.5rem "Fira Sans", sans-serif;
+}
+.padSec4 {
+  color: #3c3861;
+  padding: 0 7%;
+}
+.sec4MiniDiv hr {
+  margin-top: 5%;
+}
+
+/* *************************************************
+contact form
+***************************************************/
+
+#secContact {
+  display: block;
+  align-items: center;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#secContact h2 {
+  margin: 50px 0;
+  font-size: 24px;
+  color: #3c3861;
+}
+
+#contact-form {
+  background-color: #f6f7fb;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+.formLat {
+  display: inline-block;
+  width: 25%;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.formLat label {
+  display: block;
+  font-weight: bold;
+  color: #3c3861;
+
+  font: 1.2rem "Fira Sans", sans-serif;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: calc(100% - 10px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnForm input {
+  width: 100%;
+}
+
+/* *************************************************
+footer
+***************************************************/
+#footer {
+  background-color: #222121;
+}
+.footMainDiv {
+  width: 60vw;
+  margin: 4% auto 0;
+  padding: 2% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footList a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footList a:hover {
+  opacity: 0.9;
+}
+
+.footList li {
+  padding: 10% 0;
+  list-style: none;
+
+  font: 1rem "Fira Sans", sans-serif;
+}
+
+.footLogo {
+  font: italic 20px "Fira Sans", serif;
+
+  text-align: left;
+  color: #ffffff;
+}
+
+.footCopyR {
+  padding: 1%;
+  color: #ffffff;
+  font: 1em sans-serif;
+}
+
+.footAllRights {
+  padding: 1% 0;
+  margin: 0 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* Animation */
+
+.sec2MiniDiv.animated {
+  opacity: 1;
+}
+
+.sec2Text {
+  opacity: 0;
+}
+.sec2Text.animated {
+  opacity: 1;
+}
+
+.img-container,
+.containerLeft,
+.containerRight,
+.sec4MiniDiv {
+  opacity: 0;
+}
+
+.img-container.animated,
+.containerLeft.animated,
+.containerRight.animated,
+.sec4MiniDiv.animated {
+  opacity: 1;
+}
+
+/* responisve */
+
+@media screen and (max-width: 970px) {
+  /* Stilurile pentru first Section */
+  .sec1MainDiv {
+    flex-direction: column;
+  }
+
+  .sec1FirstDiv h1 {
+    font: italic 20px "Fira Sans", serif;
+  }
+  .sec1FirstDiv p {
+    margin-right: 20%;
+    font: 1.9rem "Fira Sans", sans-serif;
+    padding: 4%;
+  }
+
+  .sec1FirstDiv {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .sec1btn {
+    padding: 1%;
+  }
+
+  .sec1SeconDiv img {
+    margin-top: 0;
+    width: 80%;
+    height: 80%;
+  }
+
+  /* Stilurile pentru second Section */
+  .sec2MainDiv {
+    margin: 4% 2%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sec2Text {
+    margin-left: 25%;
+    width: 50%;
+  }
+
+  .sec2Text h1 {
+    font-size: 4vh;
+  }
+
+  .sec2Text p {
+    font-size: 2vh;
+  }
+
+  .sec2MiniDiv {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .sec2MiniDiv p {
+    margin-top: 2%;
+    width: 10vw;
+  }
+
+  /*  */
+  .formLat {
+    display: flex;
+    width: 100%;
+  }
+
+  #secContact {
+    width: 100%;
+  }
+  /*  */
+  .footAllRights {
+    flex-direction: column;
+  }
+  .footMainDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* Stilurile pentru a 4 Section */
+  .sec1FirstDiv p {
+    font: 0.8rem "Fira Sans", sans-serif;
+    padding: 4%;
+  }
+
+  .sec1SeconDiv img {
+    width: 80%;
+    height: 80%;
+  }
+  /*  */
+  .sec2MiniDiv p {
+    margin-top: 15%;
+    width: 20vw;
+  }
+
+  /*  */
+  .sec4MainDiv {
+    align-items: center;
+    margin: 4% 8%;
+    flex-direction: column;
+  }
+  .sec4MiniDiv {
+    width: 100%;
+    margin: 2%;
+  }
+  .sec4MiniDiv img {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sec4InMiniDiv p {
+    padding: 3%;
+  }
+  .padSec4 {
+    color: #3c3861;
+    padding: 0 3%;
+  }
+  .sec4MiniDiv hr {
+    margin-top: 2%;
+  }
+  /*  */
+}
+
+@media screen and (max-width: 1200px) {
+  .sec3img {
+    margin: 2% 8% 2% 0;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .img-container {
+    margin-top: 4%;
+  }
+  .overlay-text {
+    font-weight: bold;
+    font-size: 0.6rem;
+  }
+
+  .sec1FirstDiv h1 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .snacks {
+    flex-direction: column;
+    align-items: left;
+  }
+  .leftBtn button {
+    float: right;
+  }
+}
